@@ -1,29 +1,55 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-    <head>
-    <!--
-        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
-        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
-    -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>VirtualTourMobileDemo</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
-        <script type="text/javascript" src="scripts/index.js"></script>
-    </body>
+<head>
+	<!--
+		Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+		For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+	-->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!--<link rel="stylesheet" href="../node_modules/photo-sphere-viewer/dist/photo-sphere-viewer.css">-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@3.3.3/dist/photo-sphere-viewer.min.css">
+
+	<!--<script type="text/javascript" src="../node_modules/three/build/three.js"></script>
+	<script type="text/javascript" src="../node_modules/d.js/lib/D.js"></script>
+	<script type="text/javascript" src="../node_modules/uevent/uevent.js"></script>
+	<script type="text/javascript" src="../node_modules/dot/doT.js"></script>
+	<script type="text/javascript" src="../node_modules/nosleep.js/dist/NoSleep.js"></script>
+	<script type="text/javascript" src="../node_modules/photo-sphere-viewer/dist/photo-sphere-viewer.js"></script>-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/93/three.min.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/malko/D.js/v0.7.5/lib/D.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/uevent@1.0.0/uevent.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dot/1.0.3/doT.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nosleep/0.6.0/NoSleep.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@3.3.3/dist/photo-sphere-viewer.min.js"></script>
+
+	<script type="text/template" id="pin-content">
+		<h1>HTML Ipsum Presents</h1>
+
+		<p>
+			<strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.
+			Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+			semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien
+			ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi.
+			Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.
+		</p>
+
+		<img src="assets/pin2.png" style="width:100%" />
+	</script>
+
+	<title>VirtualTourMobileDemo</title>
+</head>
+<body>
+	<div id="viewer"></div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="scripts/platformOverrides.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
+</body>
 </html>
