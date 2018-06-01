@@ -112,12 +112,12 @@
 			}())
 		});
 
-		//viewer.on('select-marker', function (marker, dblclick) {
-		//	viewer.clearMarkers();
-		//	viewer.setPanorama(panos[1].url, panos[1].target, true)
-		//		.then(function () {
-		//			viewer.setCaption(panos[1].desc);
-		//		});
-		//});
+		viewer.on('select-marker', function (marker, dblclick) {
+			viewer.clearMarkers();
+			viewer.setPanorama(panos[1].url, panos[1].target, true)
+				.then(function () {
+					viewer.setCaption(panos[1].desc);
+				});
+		});
 	}
 } )();

@@ -1,5 +1,22 @@
 {
-    "name": "VirtualTourMobileDemo",
-    "dependencies": {
-    }
+  "name": "VirtualTourMobileDemo",
+  "dependencies": {
+    "Photo-Sphere-Viewer": "^3.3.3",
+    "nosleep": "^0.7.1"
+  },
+  "homepage": "https://github.com/gezanoletti/VirtualTourMobileDemo",
+  "authors": [
+    "G.E. Zanoletti <gezanoletti@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
